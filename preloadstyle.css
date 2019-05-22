@@ -1,0 +1,91 @@
+body {
+    animation: change;
+    animation-duration: 12s;
+    width: 100%;
+
+}
+
+.protobug {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: bug;
+    animation-delay: 7s;
+    margin-top: 75%;
+}
+
+.container {
+    position: absolute;
+    left: 45%;
+    top: 50%;
+
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background: yellow;
+    border-radius: 50%;
+    position: absolute;
+    animation: animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-out;
+    box-shadow: 0 0 15px 1px yellow;
+
+}
+
+
+
+@keyframes animation {
+    0% {
+        transform-origin: -940% -900%;
+        transform: rotate(100deg);
+        opacity: 0;
+
+    }
+
+
+    
+
+    40% {
+        transform-origin: 900% 50%;
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes bug {
+    0% {
+       visibility: hidden;
+    }
+
+  
+    40% {
+        visibility: visible;
+    }
+
+
+}
+
+
+
+@keyframes change {
+    0% {
+        background: #000000;
+    }
+    
+    30% {
+        background: #000000;
+    }
+
+    60% {
+        background: #152238;
+    }
+
+    90% {
+        background: #ffffff;
+    }
+}
+
+
+}

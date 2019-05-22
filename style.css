@@ -1,61 +1,460 @@
+/* pre-settings */
+
+
 img {
-	max-width: 100%;
-	height: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+body {
+
+    font-family: 'Lato', sans-serif;
+    
+}
+
+html,
+body {
+    height: 100%;
 }
 
 
 
-@media only screen and (max-width: 1020px) and (orientation:portrait){
-	
-	
-	
-	.icons {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		align-items: flex-end;
-		justify-content: space-around;
-		position: absolute;
-		bottom: 0px;
-		left: 0px;
-		right: 0px;
-		background-color: #F6F6F6;
-		
-	}
-	
-	#home {
-		padding: 20px;
-		width: 5%;
-	}
-	
-	#calendar {
-		padding: 20px;
-		width: 5%;
-		background-color: yellow;
-	}
-	
-	#create {
-		padding: 20px;
-		width: 5%;
-	}
-	
-	#profile {
-		padding: 20px;
-		width: 5%;
-	}
+@media only screen and (max-width: 1020px) and (orientation:portrait) {
+
+
+/****************************************************/
+    /* menu and icons */
+
+    #icon {
+        width: 10%;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        justify-content: space-around;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: #F6F6F6;
+
+    }
+
+    #home {
+        padding: 20px;
+        width: 5%;
+    }
+
+    #calendar {
+        padding: 20px;
+        width: 5%;
+        background-color: yellow;
+    }
+
+    #create {
+        padding: 20px;
+        width: 5%;
+    }
+
+    #profile {
+        padding: 20px;
+        width: 5%;
+    }
 }
 
+
+
+/****************************************************/
+/* login page */
+
+
+.logincontainer {
+    flex-direction: row;
+    align-items: stretch;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+.logo {
+    width: 70%;
+    margin-top: 130px;
+}
+
+.email {
+    margin-top: 120px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    width: 550px;
+    height: 60px;
+    border: 2px solid #ffef1e;
+
+}
+
+.password {
+    margin-bottom: 50px;
+    width: 550px;
+    height: 60px;
+    border: 2px solid #ffef1e;
+}
+
+.canvas {
+    width: 28px;
+
+}
+
+.label {
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+/****************************************************/
+/* profil page */
+
+
+
+#icon {
+    width: 10%;
+    padding: 35px;
+}
+
+.profilicons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-around;
+    position: absolute;
+    left: 50px;
+    right: 0px;
+    padding: 10px;
+
+}
+
+.info {
+    padding: 30px;
+    vertical-align: middle;
+}
+
+#folder {
+    width: 8%;
+    padding: 35px;
+}
+
+#person {
+    width: 35%;
+    padding: 70px;
+    padding-top:
+}
+
+
+
+/****************************************************/
+/* regular events */
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+
+
+
+
+}
+
+
+
+.reg {
+    width: 95px;
+    margin: 80px;
+    margin-right: 60px;
+    animation: bounce 3s ease infinite;
+    animation-delay: 2s;
+
+
+}
+
+
+.text {
+    width: 420px;
+    padding-top: 10px;
+    margin-left: 0px;
+    margin-right: 100px;
+}
+
+
+
+/* credits
+	https://css-tricks.com/making-css-animations-feel-natural/ */
+
+@keyframes bounce {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    30% {
+        transform: scale(.9, 1.1) translateY(-30px);
+    }
+
+    50% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    57% {
+        transform: scale(1, 1) translateY(-7px);
+    }
+
+    64% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+
+
+
+/****************************************************/
+/* event description page */
+
+
+
+.video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5em;
+    margin-top: 4em;
+    border-radius: 2em;
+    width: 820px;
+    height: 515px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+}
+
+.list > img {
+    width: 5%;
+    height: 8%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-left: 15%;
+}
+
+.list > h2 {
+    color: #21B3B2;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.7em;
+}
+
+.leader {
+    display: flex;
+    flex-direction: row;
+}
+
+.leader > img {
+    width: 5%;
+    height: 8%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-left: 15%;
+}
+
+.leader > h1 {
+    color: #21B3B2;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.7em;
+}
+
+
+/* pop-up page settings */
+
+.box {
+    width: 40%;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(255, 255, 255, 0.9);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 10em auto;
+    padding: 5em;
+    background: #fff;
+    border: 4px solid #FFEF1E;
+    border-radius: 2em;
+    width: 60%;
+    height: 60%;
+    position: relative;
+}
+
+.popup h2 {
+    margin-top: 3.5em;
+    color: #1D1D1B;
+    font-family: 'Lato', sans-serif;
+    font-size: 3.2em;
+    text-align: center;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 400%;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1D1D1B;
+}
+
+.popup .close:hover {
+    color: #1D1D1B;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+    font-size: 3.5em;
+    margin-top: 25%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+.popup .content > p {
+    color: #8C8C8B;
+}
+
+.popup .content1 {
+    max-height: 30%;
+    overflow: auto;
+    font-size: 3.5em;
+    margin-top: 25%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #8C8C8B;
+}
+
+
+
+
+/* fonts ALL */
+/*******************************************************/
+
+
+a {
+    text-decoration: none;
+    color: #8C8C8B;
+    font-family: Lato;
+    font-size: 40px;
+}
+
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 70px;
+}
+
+h2 {
+    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+
+}
+
+/* profile name */
+
+h3 {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+
+}
+
+/* popup, description */
+
+h4 {
+    font-size: 35px;
+  
+
+}
+
+p {
+    font-size: 32px;
+    color: #8c8c8b;
+}
+
+/*****************************************************/
+/* animation for button ALL */
+.button {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 26px;
+    border-radius: 15px;
+    background: url(img/shapebub.jpg);
+    background-repeat: repeat-x;
+    animation: animbutton 4s alternate infinite;
+
+    /*box-shadow: 7px 7px 25px #8c8c8b;*/
+    /*border: 1px solid #8c8c8b;*/
+    border: 1px solid #ffef1e;
+
+
+}
+
+@keyframes animbutton {
+    0% {
+        background-position: -25px -70px;
+
+    }
+}
 
 
 
 
 /* if tablet */
 
-@media only screen and (min-width: 1020px) and (max-width: 2736px) and (orientation: portrait) {
-	
-	
-	
-	
-}
-
-
+@media only screen and (min-width: 1020px) and (max-width: 2736px) and (orientation: portrait) {}

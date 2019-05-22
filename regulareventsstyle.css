@@ -1,0 +1,132 @@
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+@media only screen and (max-width: 1020px) and (orientation:portrait){
+	
+	body {
+		
+		font-family: 'Lato', sans-serif;
+	}
+	
+	.container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: space-around;
+		
+		
+		
+		
+	}
+	
+
+	
+	.reg {
+		width: 95px;
+		margin: 110px;
+		margin-right: 60px;
+        animation: bounce 3s ease infinite;
+		animation-delay: 2s;
+		
+    
+    }
+	
+	
+	.text {
+		width: 380px;
+		padding-top: 50px;
+		margin-left: 0px;
+		margin-right: 100px;
+	}
+	
+	
+	
+	/* credits
+	https://css-tricks.com/making-css-animations-feel-natural/ */
+	
+    @keyframes bounce {
+        0%   { transform: scale(1,1)    translateY(0); }
+        10%  { transform: scale(1.1,.9) translateY(0); }
+        30%  { transform: scale(.9,1.1) translateY(-30px); }
+        50%  { transform: scale(1,1)    translateY(0); }
+        57%  { transform: scale(1,1)    translateY(-7px); }
+        64%  { transform: scale(1,1)    translateY(0); }
+        100% { transform: scale(1,1)    translateY(0); }
+    }
+		
+	/* */
+	
+	
+	
+	
+	h1 {
+		font-size: 70px;
+		text-align: center;
+		margin-top: 130px;
+		margin-bottom: 120px;
+	}
+
+	h3 {
+		font-size: 40px;
+		margin-top: 30px;
+		margin-bottom: 0px;
+
+	}
+	
+	
+	h4 {
+		font-size: 25px;
+		width: 20px;
+		
+	}
+	
+	p {
+		font-size: 29px;
+		color: #8c8c8b;
+	}
+	
+	.icons {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: flex-end;
+		justify-content: space-around;
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		background-color: #F6F6F6;
+		
+	}
+	
+	#home {
+		padding: 20px;
+		width: 5%;
+	}
+
+	#calendar {
+		padding: 20px;
+		width: 5%;
+		
+	}
+	
+	#create {
+		padding: 20px;
+		width: 5%;
+
+	}
+	
+	#profile {
+		padding: 20px;
+		width: 5%;
+	}
+}
+
+
+
+
