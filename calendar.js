@@ -25,7 +25,7 @@ function renderCalendar(startDay, totalDays, currentDate) {
     var i = 1;
     for (; i <= totalDays; i++) {
         if (currentDay == 5 && currentRow == 2) {
-            $day.append('<a href="description.html"><img src="img/buton.png""></a>');
+            $day.append('<a href="description1.html"><img src="img/buton1.png""></a>');
         }
         if (currentDay != 6 && currentDay != 5) {
             $day = $week.find('td').eq(currentDay);
