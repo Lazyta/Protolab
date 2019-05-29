@@ -1,16 +1,11 @@
 /* pre-settings */
-
-
 img {
     max-width: 100%;
     height: auto;
 }
-
-
 body {
 
     font-family: 'Lato', sans-serif;
-    
 }
 
 html,
@@ -19,29 +14,29 @@ body {
 }
 
 
-
+/* media queries for phone */
 @media only screen and (max-width: 1020px) and (orientation:portrait) {
 
 
 /****************************************************/
-    /* menu and icons */
+/* menu and icons */
 
     #icon {
         width: 10%;
+        
     }
-
+    
     .icons {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: flex-end;
         justify-content: space-around;
-        position: absolute;
+        position: fixed;
         bottom: 0px;
         left: 0px;
         right: 0px;
         background-color: #F6F6F6;
-
     }
 
     #home {
@@ -52,7 +47,6 @@ body {
     #calendar {
         padding: 20px;
         width: 5%;
-        background-color: yellow;
     }
 
     #create {
@@ -76,178 +70,112 @@ body {
     flex-direction: row;
     align-items: stretch;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
 }
-
-
-
 .logo {
-    width: 70%;
-    margin-top: 130px;
+    width: 75%;
+    margin-top: 80px;
 }
-
 .email {
-    margin-top: 120px;
-    margin-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 25px;
     margin-left: auto;
-    width: 550px;
-    height: 60px;
+    width: 250px;
+    height: 35px;
     border: 2px solid #ffef1e;
-
 }
-
 .password {
-    margin-bottom: 50px;
-    width: 550px;
-    height: 60px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    width: 250px;
+    height: 35px;
     border: 2px solid #ffef1e;
 }
 
 .canvas {
-    width: 28px;
+    width: 20%;
+    margin-left: 8px;
 
 }
 
-.label {
-    font-size: 50px;
-}
-
-
-
-
-
-
-
-
-/****************************************************/
-/* profil page */
-
-
-
-#icon {
-    width: 10%;
-    padding: 35px;
-}
-
-.profilicons {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: baseline;
-    justify-content: space-around;
-    position: absolute;
-    left: 50px;
-    right: 0px;
-    padding: 10px;
-
-}
-
-.info {
-    padding: 30px;
-    vertical-align: middle;
-}
-
-#folder {
-    width: 8%;
-    padding: 35px;
-}
-
-#person {
-    width: 35%;
-    padding: 70px;
-    padding-top:
-}
-
-
-
-/****************************************************/
-/* regular events */
-
-
-.container {
+.canvascontainer {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-around;
-
-
-
-
+    align-items: center;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 40px;
+    justify-content: center;
 }
 
-
-
-.reg {
-    width: 95px;
-    margin: 80px;
-    margin-right: 60px;
-    animation: bounce 3s ease infinite;
-    animation-delay: 2s;
-
-
+.remember {
+    margin-bottom: 3px;
 }
 
-
-.text {
-    width: 420px;
-    padding-top: 10px;
-    margin-left: 0px;
-    margin-right: 100px;
+/* wavy button for login */
+.button {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 130px;
+    height: 35px;
+    border-radius: 80px;
+    background: url(img/shapebub.jpg);
+    background-repeat: repeat-x;
+    animation: animbutton 4s alternate infinite;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    color: #8c8c8b;
+    border: 1px solid #ffef1e;
 }
-
-
-
-/* credits
-	https://css-tricks.com/making-css-animations-feel-natural/ */
-
-@keyframes bounce {
+@keyframes animbutton {
     0% {
-        transform: scale(1, 1) translateY(0);
-    }
+        background-position: -25px -70px;
 
-    10% {
-        transform: scale(1.1, .9) translateY(0);
-    }
-
-    30% {
-        transform: scale(.9, 1.1) translateY(-30px);
-    }
-
-    50% {
-        transform: scale(1, 1) translateY(0);
-    }
-
-    57% {
-        transform: scale(1, 1) translateY(-7px);
-    }
-
-    64% {
-        transform: scale(1, 1) translateY(0);
-    }
-
-    100% {
-        transform: scale(1, 1) translateY(0);
     }
 }
 
 
+
+
+/* home page and calendar has an anouther CSS due to differences on these pages */
 
 
 /****************************************************/
 /* event description page */
 
+.attend {
+     text-decoration: none;
+    color: #8c8c8b;
+    font-family: Lato; 
+    font-size: 50px;
+    
+}
+
+.workshop_name {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.workshop_name > a {
+    width: 3%;
+    margin-left: 6%;
+    margin-bottom: 1%;
+    margin-top: 15%;
+    margin-right: 5%;
+}
 
 
-.video {
+#video {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5em;
     margin-top: 4em;
     border-radius: 2em;
-    width: 820px;
-    height: 515px;
+    width: 70%;
 }
 
 .list {
@@ -259,14 +187,14 @@ body {
     width: 5%;
     height: 8%;
     margin-right: 5%;
-    margin-top: 1%;
+    margin-top: 3%;
     margin-left: 15%;
 }
 
 .list > h2 {
     color: #21B3B2;
     font-family: 'Lato', sans-serif;
-    font-size: 1.7em;
+    font-size: 40px;
 }
 
 .leader {
@@ -278,7 +206,7 @@ body {
     width: 5%;
     height: 8%;
     margin-right: 5%;
-    margin-top: 2%;
+    margin-top: 4%;
     margin-left: 15%;
 }
 
@@ -289,17 +217,43 @@ body {
 }
 
 
-/* pop-up page settings */
+/* wavy event button */
+.button2 {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    width: 340px;
+    height: 80px;
+    border-radius: 80px;
+    background: url(img/shapebub.jpg);
+    background-repeat: repeat-x;
+    animation: animbutton 4s alternate infinite;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    border: 1px solid #ffef1e;
+}
+
+@keyframes animbutton {
+    0% {
+        background-position: -25px -70px;
+
+    }
+}
+
+
+/***************************************************/
+/* EVENT pop-up page settings */
 
 .box {
+
+    margin-left: auto;
+    margin-right: auto;
     width: 40%;
-    margin: 0;
     background: rgba(255, 255, 255, 0.2);
-    padding: 35px;
+    padding: 30px;
     border: 2px solid #fff;
-    border-radius: 20px/50px;
-    background-clip: padding-box;
-    text-align: center;
+
 }
 
 .overlay {
@@ -356,11 +310,11 @@ body {
 .popup .content {
     max-height: 30%;
     overflow: auto;
-    font-size: 3.5em;
     margin-top: 25%;
     text-align: center;
     font-family: 'Lato', sans-serif;
 }
+
 .popup .content > p {
     color: #8C8C8B;
 }
@@ -378,83 +332,146 @@ body {
 
 
 
+
+
+/* **************************************************/
+/* create page */
+
+
+/* lead a workshop*/
+#lead {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dbdbdb;
+    width: 80%;
+    font-family: Lato, sans-serif;
+    color: #8c8c8b;
+    border-radius: 10px;
+}
+
+/* suggest a topic */
+#suggest {
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dbdbdb;
+    width: 80%;
+    font-family: Lato, sans-serif;
+    color: #8c8c8b;
+    border-radius: 10px;
+}
+
+/* form class */
+.formu {
+    margin-left: 59px;
+    margin-right: 20px;
+}
+
+/* main two extendable buttons */
+.button3 {
+    margin-top: 50px;
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    background: #ffef1e;
+    background-repeat: repeat-x;
+    animation: animbutton 4s alternate infinite;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    border: 1px solid #ffef1e;
+}
+
+/* wavy buttons at the end */
+.buttoncreate {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 120px;
+    height: 30px;
+    border-radius: 100px;
+    background: url(img/shapebub.jpg);
+    background-repeat: repeat-x;
+    animation: animbutton 4s alternate infinite;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    color: #8c8c8b;
+    border: 1px solid #ffef1e;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+@keyframes animbutton {
+    0% {
+        background-position: -25px -70px;
+    }
+}
+
+
+/* description text */
+.createfont {
+    margin-right: 45px;
+    margin-left: 45px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+
+
+
+
 /* fonts ALL */
 /*******************************************************/
 
 
 a {
     text-decoration: none;
-    color: #8C8C8B;
-    font-family: Lato;
-    font-size: 40px;
+    color: #8c8c8b;
+    font-family: Lato; 
+    font-size: 25px;
 }
 
-
 h1 {
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
     margin-top: 130px;
     margin-bottom: 70px;
 }
 
 h2 {
-    font-size: 45px;
+    font-size: 15px;
     margin-top: 30px;
     margin-bottom: 0px;
 
 }
 
-/* profile name */
 
 h3 {
-    font-size: 40px;
+    font-size: 10px;
     margin-top: 30px;
     margin-bottom: 0px;
 
 }
-
-/* popup, description */
 
 h4 {
     font-size: 35px;
-  
+}
 
+h5 {
+    font-size: 15px;
 }
 
 p {
-    font-size: 32px;
-    color: #8c8c8b;
-}
-
-/*****************************************************/
-/* animation for button ALL */
-.button {
-    margin-top: 40px;
-    margin-bottom: 30px;
-    width: 150px;
-    height: 26px;
-    border-radius: 15px;
-    background: url(img/shapebub.jpg);
-    background-repeat: repeat-x;
-    animation: animbutton 4s alternate infinite;
-
-    /*box-shadow: 7px 7px 25px #8c8c8b;*/
-    /*border: 1px solid #8c8c8b;*/
-    border: 1px solid #ffef1e;
-
-
-}
-
-@keyframes animbutton {
-    0% {
-        background-position: -25px -70px;
-
-    }
+    font-size: 16px;
+    color: #4a4a4a;
 }
 
 
 
 
-/* if tablet */
 
-@media only screen and (min-width: 1020px) and (max-width: 2736px) and (orientation: portrait) {}

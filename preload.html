@@ -1,37 +1,32 @@
+<!DOCTYPE html>
 
-
-<html>
-<head> 
-<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="preloadstyle.css"/>
-	
-	<script>
-    setTimeout(function(){
-            window.location.href = 'login.html';
-         }, 11000);
-    </script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="preloadstyle.css" />
+    <title>Protolab</title>
 </head>
-<body> 
 
+<body>
+<!-- credits: https://www.tutorialspoint.com/How-to-use-JavaScript-to-redirect-a-webpage-after-5-seconds -->
+       <script>
+        setTimeout(() => {
+            window.location.href = 'login.html';
+        }, 13000);
 
-<div class="container">
+        setTimeout(() => {
+            document.getElementById("protobug").style.display = "block";
+        }, 5900);
+    </script>
+    <!-- bug's lightning circle -->
+    <!-- credits: Lesson from 30.01.2019 about Animation in CSS -->
+    <div class="container">
+        <div class="circle">    
+        </div>
+    </div>
 
-	<div class="circle">
-	
-	
-	</div>
-	
-		
-	</div>
+    <!-- logo animation-->
+    <img id="protobug" class="protobug" src="img/animation.gif" alt="animation"/>
 
-	<img class="protobug" src="img/animation.gif">
-	
-	
-	
-	
-
-	
-	
-	
-	</body>
+</body>
 </html>

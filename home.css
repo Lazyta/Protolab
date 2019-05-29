@@ -1,0 +1,362 @@
+/* pre-settings */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+
+    font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/*****************************************************/
+/* home page - caroussel */
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 19px;
+
+
+}
+
+/* profile name */
+
+h3 {
+    font-size: 10px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+
+}
+
+/******************************************************/
+/* popup, description */
+
+h4 {
+    font-size: 15px;
+    color: #4a4a4a;
+    margin: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    font-weight: normal;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+p {
+    font-size: 15px;
+    color: #4a4a4a;
+}
+
+
+/* media queries for phone */
+@media only screen and (max-width: 1020px) and (orientation:portrait) {
+
+
+    /****************************************************/
+    /* menu and icons */
+
+    #icon {
+        width: 10%;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: #F6F6F6;
+
+    }
+
+    #home {
+        padding: 20px;
+        width: 5%;
+    }
+
+    #calendar {
+        padding: 20px;
+        width: 5%;
+    }
+
+    #create {
+        padding: 20px;
+        width: 5%;
+    }
+
+    #profile {
+        padding: 20px;
+        width: 5%;
+    }
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    top: 0;
+    position: absolute;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+
+
+}
+
+.arrows {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    margin-top: 520px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    border-radius: 3px 0 0 3px;
+    margin-left: 317px;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dots {
+    padding-top: 540px;
+    text-align: center;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 42%;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/*wave effect*/
+
+
+
+#container1 {
+    width: 850px;
+    height: 800px;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    transform: rotate(180deg);
+
+}
+
+
+.wave-01 {
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    left: -55%;
+    top: 51%;
+    background-color: #fff465;
+    border-radius: 57%;
+    animation: rotate 17s linear reverse infinite;
+}
+
+
+.wave-02 {
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    left: -50%;
+    top: 57%;
+    background-color: #ffef1e;
+    opacity: .9;
+
+    border-radius: 43%;
+    animation: rotate 17s linear reverse infinite;
+}
+
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/****************************************************/
+/* home page middle */
+
+.golden {
+    width: 85%;
+    margin-top: 45px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+
+/****************************************************/
+/* regular events page */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.reg {
+    width: 32%;
+    margin-top: 50px;
+    margin-left: 20px;
+    animation: bounce 3s ease infinite;
+    animation-delay: 2s;
+}
+
+
+.text {
+    width: 58%;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+
+
+/* credits
+	https://css-tricks.com/making-css-animations-feel-natural/ */
+
+@keyframes bounce {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    30% {
+        transform: scale(.9, 1.1) translateY(-30px);
+    }
+
+    50% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    57% {
+        transform: scale(1, 1) translateY(-7px);
+    }
+
+    64% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+
+
+
+/**************************************************/
+/* contact page */
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 35px;
+   align-items: center;
+  justify-content: center 
+}
+
+.contacticons {
+    width: 70%;
+    height: 10%;
+    margin: 8px;
+
+}
+
+.contacttext {
+    margin: 40px;
+    text-align: justify;
+}

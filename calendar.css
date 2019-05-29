@@ -1,0 +1,101 @@
+/* pre-settings */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+
+    font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* calendar CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+th {
+    height: 20px;
+    text-align: center;
+    font-weight: 400;
+    color: #21b3b2;
+}
+
+td {
+    height: 50px;
+}
+
+.today {
+    background-color: #ffef1e;
+}
+
+th:nth-of-type(7),
+td:nth-of-type(7) {
+    font-weight: bold;
+}
+
+th:nth-of-type(1),
+td:nth-of-type(1) {
+    font-weight: bold;
+}
+
+
+/* media queries for phone */
+
+@media only screen and (max-width: 1020px) and (orientation:portrait) {
+
+
+    /****************************************************/
+    /* menu and icons */
+
+        #icon {
+        width: 10%;
+    }
+    
+    .icons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: #F6F6F6;
+
+    }
+    
+    #home {
+        padding: 20px;
+        width: 15.9%;
+    }
+    
+        #calendar {
+        padding: 20px;
+        width: 15.9%;
+    }
+
+    #create {
+        padding: 20px;
+        width: 15.9%;
+    }
+
+    #profile {
+        padding: 20px;
+        width: 15.9%;
+    }
+}
